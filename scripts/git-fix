@@ -1,0 +1,16 @@
+function git-fix {
+  local branch=$(git_current_branch)
+  local regex='^(.{0,3}\-[0-9.]{0,5})'
+  local ticket_reference='none'
+
+  if [[ $branch =~ $regex ]]; then
+    ticket_reference=$match[1]
+  fi
+
+  if [ -z "$1" ]
+    then
+      git commit -m "fix() [$ticket_reference)]: " -e
+    else
+      git commit -m "fix() [$ticket_reference)]: $1"
+  fi
+}
