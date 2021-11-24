@@ -1,6 +1,6 @@
 function git-chore {
   local branch=$(git_current_branch)
-  local regex='^(.{0,3}\-[0-9.]{0,5})'
+  local regex='(.{0,3}\-[0-9.]{0,5})'
   local ticket_reference='none'
 
   if [[ $branch =~ $regex ]]; then
