@@ -9,8 +9,8 @@ function git-test {
 
   if [ -z "$1" ]
     then
-      git commit -m "test() [$ticket_reference)]: " -e
+      git commit -m "test() [$ticket_reference]: " -e
     else
-      git commit -m "test() [$ticket_reference)]: $1"
+      git commit -m "test() [$ticket_reference]: $1"
   fi
 }

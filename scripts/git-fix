@@ -9,8 +9,8 @@ function git-fix {
 
   if [ -z "$1" ]
     then
-      git commit -m "fix() [$ticket_reference)]: " -e
+      git commit -m "fix() [$ticket_reference]: " -e
     else
-      git commit -m "fix() [$ticket_reference)]: $1"
+      git commit -m "fix() [$ticket_reference]: $1"
   fi
 }

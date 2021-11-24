@@ -9,8 +9,8 @@ function git-refactor {
 
   if [ -z "$1" ]
     then
-      git commit -m "refactor() [$ticket_reference)]: " -e
+      git commit -m "refactor() [$ticket_reference]: " -e
     else
-      git commit -m "refactor() [$ticket_reference)]: $1"
+      git commit -m "refactor() [$ticket_reference]: $1"
   fi
 }

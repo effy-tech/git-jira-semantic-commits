@@ -9,8 +9,8 @@ function git-post {
 
   if [ -z "$1" ]
     then
-      git commit -m "post() [$ticket_reference)]: " -e
+      git commit -m "post() [$ticket_reference]: " -e
     else
-      git commit -m "post() [$ticket_reference)]: $1"
+      git commit -m "post() [$ticket_reference]: $1"
   fi
 }

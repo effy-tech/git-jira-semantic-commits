@@ -11,6 +11,6 @@ function git-feat {
     then
       git commit -m "feature() [$ticket_reference]:  " -e
     else
-      git commit -m "feature() [$ticket_reference)]: $1" -e
+      git commit -m "feature() [$ticket_reference]: $1" -e
   fi
 }
